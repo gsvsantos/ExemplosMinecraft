@@ -8,20 +8,21 @@ public class Program
     {
         // Variáveis locais dentro do método Main, permanecem na memória enquanto Main() estiver rodando.
         string nomeJogador = "Steve";
-        int vidaJogador = 100;
+        int vidaJogador = 20;
 
-        // Criando um jogador
+        // Criando uma instância do jogador, com nome e vida inicial declarados nas variáveis locais anteriores.
         Jogador jogador = new Jogador(nomeJogador, vidaJogador);
 
-        // Criando um bloco do tipo Pedra
-        Bloco bloco = new Bloco("Terra", 3);
+        // Criando um bloco do tipo "Pedra" com 3 de durabilidade.
+        Bloco bloco = new Bloco("Pedra", 3);
 
         Console.WriteLine($"{jogador.Nome} encontrou um bloco de {bloco.Tipo}!\n");
 
-        // Chamando o método para quebrar o bloco
+        // Chamando o método para quebrar o bloco, quando quebrar, coleta o bloco.
         if (QuebrarBloco(jogador, bloco))
         {
             Console.WriteLine($"\n{jogador.Nome} coletou um bloco de {bloco.Tipo}!");
+            Console.WriteLine($"\nCorações restantes: {jogador.Vida}");
         }
     }
 
@@ -30,11 +31,14 @@ public class Program
         Console.WriteLine($"{jogador.Nome} começou a quebrar um bloco de {bloco.Tipo}!\n");
 
         int golpes = 0; // Variável local dentro do método QuebrarBloco, quando sair do método QuebrarBloco() e voltar para Main(), ela deixara de existir.
-        while (golpes < bloco.Durabilidade)
+        while (bloco.Durabilidade > 0)
         {
             golpes++;
+            bloco.ReduzirDurabilidade(); // Método do bloco para reduzir a durabilidade a cada golpe dado.
             Console.WriteLine($"Golpe {golpes}");
         }
+
+        jogador.ReduzirVida(golpes);
 
         Console.WriteLine($"\nBloco de {bloco.Tipo} quebrado!");
         return true; // Quando quebrar o bloco, retorna um valor booleano verdadeiro para o "if (QuebrarBloco(jogador, bloco))".
