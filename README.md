@@ -45,7 +45,7 @@ Classe que representa um jogador.
 
 ### `QuebrarBloco()`
 Método que simula a ação da quebra de um bloco.
-- Trabalha com **parâmetros** (Jogador jogador, Bloco bloco).
+- Trabalha com **parâmetros** (`Jogador jogador, Bloco bloco`).
 - Contém um uso prático de **`while`**.
 - Define **variável local** (`golpes`).
 - Resulta em um **retorno booleano**.
