@@ -8,9 +8,8 @@ O código demonstra os seguintes conceitos de programação:
 - **Variáveis**
 - **Atributos**
 - **Classes**
-- **Funções e Métodos**
 - **Parâmetros**
-- **Encapsulamento**
+- **Funções e Métodos**
 
 ## Como Executar o Código
 
@@ -22,7 +21,7 @@ O código demonstra os seguintes conceitos de programação:
 
 4. **Compile e execute o programa (F5 ou Ctrl + F5)** para ver a saída no console.
 
-5. **Use breakpoints** para analisar o fluxo do código e entender melhor cada parte.
+5. **Use breakpoints** para analisar o fluxo do código e entender melhor cada parte dele.
 
 6. **Modifique valores** (como nome do jogador, vida, tipo de bloco e durabilidade) e veja como afetam a execução.
 
@@ -53,17 +52,17 @@ Método que simula a ação da quebra de um bloco.
 
 ## Saída Esperada
 ```
-Steve encontrou um bloco de Pedra!
+Steve encontrou um bloco de Terra!
 
-Steve começou a quebrar um bloco de Pedra!
+Steve começou a quebrar um bloco de Terra!
 
 Golpe 1
 Golpe 2
 Golpe 3
 
-Bloco de Pedra quebrado!
+Bloco de Terra quebrado!
 
-Steve coletou um bloco de Pedra!
+Steve coletou um bloco de Terra!
 ```
 
 ## Requisitos
@@ -83,6 +82,6 @@ Para um aprendizado mais prático:
 Este projeto é uma forma interativa e divertida de aprender C# utilizando a temática do Minecraft. Futuramente será acrescentada herança e polimorfismo!
 
 # Sobre o Projeto
-Este projeto foi desenvolvido como parte de uma atividade da [Academia do Programador](https://www.instagram.com/academiadoprogramador/).
+Este é um projeto  da [Academia do Programador](https://www.instagram.com/academiadoprogramador/).
 
 
