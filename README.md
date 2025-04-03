@@ -11,6 +11,8 @@ O código demonstra os seguintes conceitos de programação:
 - **Parâmetros**
 - **Funções e Métodos**
 
+#### Branch com Encapsulamento e Propriedades: [v2](https://github.com/gsvsantos/ExemplosMinecraft/tree/v2)
+
 ## Como Executar o Código
 
 1. **Instale o Visual Studio** com suporte para C#.
@@ -79,7 +81,7 @@ Para um aprendizado mais prático:
 - **Experimente adicionar novos blocos** ou jogadores e testar diferentes cenários.
 
 ## Considerações Finais
-Este projeto é uma forma interativa e divertida de aprender C# utilizando a temática do Minecraft. Futuramente será acrescentada herança e polimorfismo!
+Este projeto é uma forma interativa e divertida de aprender C# utilizando a temática do Minecraft.
 
 # Sobre o Projeto
 Este é um projeto  da [Academia do Programador](https://www.instagram.com/academiadoprogramador/).
